@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1> Search for Books or Users! </h1>
+
+    <h2>
+        <a class="Search for Books" href="#">href="{{ url_for('search_books') }}">Search Books</a>
+    </h2>
+    <h2>
+        <a class="Search for Users" href="#">href="{{ url_for('search_users') }}">Search Users</a>
+    </h2>
+{% endblock content %}

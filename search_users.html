@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<br>
+    <meta charset="UTF-8">
+    <title>Search Users</title>
+        <form action="{{ url_for('search') }}" method="post">
+            <div class="form-group">
+                <input class="form-control" type="text" placeholder="Search for Users" name="search" required>
+                <button class="btn">Search</button>
+            </div>
+        </form>
+        </section>
+            <br>
+            <div>
+                <ul>
+                    {% if no_users %}
+                        <h4 class="text-danger text-center">No matching result!</h4>
+                    {% else %}
+                        {% for users in users %}
+                            <li>
+                                <a href="{{ url_for('book', ISBN=ISBN) }}">{{users.login}}, {{users.name}}</a>
+                            </li>
+                        {% endfor %}
+                    {% endif %}
+                </ul>
+            </div>
+</form>
+</head>
+</html>

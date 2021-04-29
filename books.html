@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1> Browse Books </h1>
+    {% for books in results_list %}
+        <h3> Title: {{ post.Book_title }}</h3>
+        <h3> Author: {{ post.Book_authors }}</h3>
+{% endfor %}
+{% endblock content %}

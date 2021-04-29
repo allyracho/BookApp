@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1> Browse Books </h1>
+    {% for post in posts %}
+    <article class="media content-section">
+          <div class="media-body">
+            <h2><a class="book-title">{{ post.Book_title }}</a></h2>
+            <p class="book-authors">{{ post.Book_authors }}</p>
+            <p class="book-isbn">{{ post.Book_ISBN }}</p>
+          </div>
+        </article>
+    {% endfor %}
+{% endblock content %}
