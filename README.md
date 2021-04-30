@@ -2,10 +2,10 @@
 This is a final project assignment for my CMPSCI431W class. The goal was to create a whole stack project for a bookstore.  SQLite and Flask (Python) were used for the backend, and Flask (HTML/CSS) was also used for front end.
 
 ## routes.py
-Included in this file is the web application's logic. Some routes include: user registration/login/logout, user profiles, book statistics and reviews. The importation of 'Books.csv' was also included in this section. 
+Included in this file is the web application's logic. Some routes include: user registration/login/logout, user profiles, book statistics and reviews. The importation of 'Books.csv' was also included in this section. All functionalities were written out, but not some were not fully implemented.
 
 ## forms.py
-Included in this file is the creation of user forms for registration and login. 
+Included in this file is the creation of user forms for registration and login as well as order forms, search forms, comment forms and statistic forms. 
 
 ## models.py
 Included in this file is the creation of all tables and relationships for our database. 
